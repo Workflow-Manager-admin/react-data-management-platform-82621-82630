@@ -29,6 +29,28 @@
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/* Main layout styles for sidebar + content */
+.main-layout {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 56px);
+}
+
+.main-content {
+  flex: 1;
+  background: var(--bg-primary);
+  padding: 0;
+  min-height: 100vh;
+}
+
+.auth-wall {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 56px);
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
